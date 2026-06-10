@@ -1,8 +1,12 @@
+queue_rules:
+  - name: default
+    conditions:
+      - base=main
+
 pull_request_rules:
-  - name: test rule
+  - name: automatic merge
     conditions:
       - base=main
     actions:
-      label:
-        add:
-          - ready
+      queue:
+        name: default
