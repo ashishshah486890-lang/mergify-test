@@ -1,2 +1,2 @@
 # mergify-test
-just testing 
+just test
